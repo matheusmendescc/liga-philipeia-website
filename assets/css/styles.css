@@ -315,4 +315,9 @@
     .categoria-img img {
         width: 100%;
     }
+
+    .equipes-content {
+        display: block;
+        height: auto;
+    }
 }
