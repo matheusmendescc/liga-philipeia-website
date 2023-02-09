@@ -2,7 +2,7 @@
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231c0000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23370000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23530000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%236e0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%238A0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
-    /*COBRE AVISO*/
+    /*SOBRE AVISO*/
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -92,6 +92,7 @@
 }
 
 .intro-content {
+    padding-top: 10rem;
     top: -12.0172rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -159,7 +160,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -186,7 +187,7 @@
 }
 
 .categoria-img img:hover {
-    transform: translate(-3%, 3%) scale(1.1);
+    transform: scale(1.1);
 }
 
 .contato-form {
@@ -261,6 +262,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .intro-img2 img {
@@ -297,4 +299,20 @@
 
 .developer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    .grid-equipe, .grid-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .categoria-img img {
+        width: 100%;
+    }
 }
