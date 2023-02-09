@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body class="main-bg">
+<body>
     <aside class="menu main-bg">
         <div class="main-content menu-content">
             <h1>
-                <a href="">
+                <a href="#intro">
                     <img class="logo" src="assets/img/PHILA PRETA.png" alt="">
                 </a>
             </h1>
@@ -47,6 +47,7 @@
         </div>
     </aside>
     <div class="menu-space"></div>
+
     <section id="intro" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
@@ -140,16 +141,71 @@
         </div>
     </section>
 
-    <section id="contato" class="contato main-bg section">
-        <div class="main-content contato-content">
-            <h2 class="title-main">Contato</h2>
-            <p class="grid-description">
-                Nós da Liga Philipeia Basketball temos o prazer de receber você e a sua equipe
-                na nossa competição. Em caso de dúvidas, entre em contato.
-            </p>
+    <section id="contato" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contato</h2>
+                <p>
+                    Nós da Liga Philipeia Basketball temos o prazer de receber você e a sua equipe na nossa competição! 😁
+                    <br><br>
+                    Em caso de dúvidas entre em contato.
+                </p>
+            </div>
+            <div class="intro-img2">
+                <img src="assets/img/jogador1.svg" alt="logo-liga">
+            </div>
+            <div class="contato-form">
+                <fieldset class="form-grid">
+                    <legend>Contato</legend>
+                    <div class="form-group">
+                        <label for="first-name">
+                            Nome
+                        </label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Ex: Matheus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">
+                            Sobrenome
+                        </label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Ex: Mendes">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            E-mail
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Ex: seuemail@mail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Telefone
+                        </label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Ex: (83) 98888-8888">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="question">
+                            Dúvida
+                        </label>
+                        <textarea name="question" id="question" cols="30" rows="10" placeholder="Escreva aqui sua dúvida."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </fieldset>
+            </div>
         </div>
     </section>
 
+    <footer id="footer" class="footer white-bg">
+        <p class="direitos-content">© 2023 | Liga Philipeia Basketball | Todos os direitos reservados.</p>
+        <p class="developer">Desenvolvido por <a rel="nofollow" target="_blank" href="https://beacons.ai/matheusmendescc">Matheus Mendes</a></p>
+    </footer>
 </body>
 
 </html>
