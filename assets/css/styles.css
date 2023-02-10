@@ -301,6 +301,26 @@
     text-decoration: underline;
 }
 
+.close-menu {
+    display: none;
+}
+
+.back-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--red-color);
+    font-size: 3rem;
+    border: 0.1rem solid var(--red-color);
+}
+
 @media (max-width: 1000px) {
     .grid-equipe, .grid-categorias {
         grid-template-columns: 1fr;
@@ -319,5 +339,52 @@
     .equipes-content {
         display: block;
         height: auto;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--red-color);
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
+    .menu-space {
+        display: none;
     }
 }
