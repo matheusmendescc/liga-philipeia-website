@@ -152,6 +152,10 @@
     margin-bottom: 1rem;
 }
 
+.title-main-apoiadores {
+    margin-bottom: 10rem;
+}
+
 .grid-equipe {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -177,7 +181,7 @@
 }
 
 .grid-apoiadores h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: relative;
 }
 
@@ -363,7 +367,7 @@
 
 @media (max-width: 1000px) {
     .grid-equipe, .grid-categorias, .grid-apoiadores {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     .categoria-img {
