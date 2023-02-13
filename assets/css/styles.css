@@ -8,6 +8,16 @@
     color: var(--white-color);
 }
 
+.main-bg-3x3 {
+    background-color: #000000;
+    background-image: url("../img/back-3x3-test.svg");
+    background-attachment: fixed;
+    /*SOBRE AVISO*/
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
 .white-bg {
     background: var(--white-color);
     color: var(--primary-color);
@@ -154,7 +164,25 @@
     position: relative;
 }
 
-.sobre-content {
+.foto-equipe {
+    width: 20rem;
+    border-radius: 20%;
+}
+
+.grid-apoiadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    font-size: 1.8rem;
+}
+
+.grid-apoiadores h3 {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+
+.sobre-content, .apoiadores-content{
     max-width: 80rem;
     display: flex;
     flex-direction: column;
@@ -321,8 +349,20 @@
     border: 0.1rem solid var(--red-color);
 }
 
+.borda-redonda {
+    width: 17.5rem;
+    border-radius: 40%;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    margin-bottom: 1.5rem;
+}
+
+.borda-redonda:hover {
+    width: 18rem;
+}
+
 @media (max-width: 1000px) {
-    .grid-equipe, .grid-categorias {
+    .grid-equipe, .grid-categorias, .grid-apoiadores {
         grid-template-columns: 1fr;
     }
 
