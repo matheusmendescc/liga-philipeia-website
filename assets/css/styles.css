@@ -119,9 +119,7 @@
 }
 
 .intro-text-content h2 {
-    font-size: 6rem;
     margin-bottom: 2rem;
-    text-transform: uppercase;
     line-height: 1;
 }
 
@@ -170,7 +168,7 @@
 
 .foto-equipe {
     width: 20rem;
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 .grid-apoiadores {
