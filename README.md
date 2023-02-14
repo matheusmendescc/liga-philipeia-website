@@ -18,12 +18,12 @@
                 Matheus Mendes Castro Cavalcante
             </td>
             <td align="center">
-                <a href="https://github.com/matheusmendescc">
+                <a rel="nofollow" target="_blank" href="https://github.com/matheusmendescc">
                     <img width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/matheus-mendes-castro-cavalcante-95b857203/">
+                <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/matheus-mendes-castro-cavalcante-95b857203/">
                     <img width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
                 </a>
             </td>
@@ -54,4 +54,6 @@
     </table>
 </div>
 
-🌎 WebSite Link: https://ligaphilipeiajp.netlify.app/
+<div>
+    🌎 WebSite Link: <a rel="nofollow" target="_blank" href="https://ligaphilipeiajp.netlify.app/">https://ligaphilipeiajp.netlify.app/</a>
+</div>
