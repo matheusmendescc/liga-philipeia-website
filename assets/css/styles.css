@@ -128,7 +128,7 @@
     height: auto;
 }
 
-.categorias-content {
+.categorias-content, .modalidades-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -198,7 +198,7 @@
     padding-bottom: 8rem;
 }
 
-.grid-categorias {
+.grid-categorias, .grid-modalidade {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--gap);
@@ -335,7 +335,7 @@
     display: none;
 }
 
-.back-top {
+#back-top {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
