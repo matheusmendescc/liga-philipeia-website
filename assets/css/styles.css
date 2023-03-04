@@ -1,3 +1,4 @@
+
 .main-bg {
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231c0000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23370000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23530000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%236e0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%238A0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -20,7 +21,7 @@
 
 .main-bg-5x5 {
     background-color: #000000;
-    background-image: url(../img/foto-teste-bg-5x5.jpeg);
+    background-image: url(../img/foto-teste-bg-5x5.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -400,6 +401,7 @@
 }
 
 @media (max-width: 1000px) {
+
     .cadastro3x3-content h2 {
         font-size: 2.1rem;
     }
@@ -471,13 +473,6 @@
     }
 
     .menu-space {
-        display: none;
-    }
-
-}
-
-@media (max-width: 600px) {
-    .intro-img img, .intro-img2 .intro-img {
         display: none;
     }
 }
