@@ -479,6 +479,15 @@
 
 /*IPHONE XR*/
 @media (max-width: 414px) {
+
+    .sobre-content h2 {
+        font-size: 3rem;
+    }
+
+    .title-main-apoiadores{
+        font-size: 3rem;
+    }
+    
     .cadastro3x3-content h2 {
         font-size: 1.6rem;
     }
