@@ -31,7 +31,7 @@
 
 <ol>
 	<li>Clone este repositório em seu computador:</li>
-	<pre>git clone https://github.com/seu-usuario/liga-philipeia-basketball.git</pre>
+	<pre>git clone https://github.com/seu-usuario/liga-philipeia-website.git</pre>
 	<li>Navegue para o diretório do repositório:</li>
 	<pre>cd liga-philipeia-basketball</pre>
 	<li>Abra o arquivo <code>index.html</code> em um navegador web para visualizar o site.</li>
