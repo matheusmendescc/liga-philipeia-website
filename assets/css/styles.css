@@ -156,6 +156,19 @@
     height: 100vh;
 }
 
+.equipes-adulto-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.title-h2 h2{
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
 .title-main {
     margin-bottom: 1rem;
 }
@@ -181,6 +194,10 @@
     border-radius: 50%;
 }
 
+.foto-logos {
+    width: 18rem;
+}
+
 .grid-apoiadores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -193,6 +210,16 @@
     position: relative;
 }
 
+.grid-adulto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--gap);
+    font-size: 1.8rem;
+}
+
+.grid-adulto p {
+    font-size: rem;
+}
 
 .sobre-content, .apoiadores-content{
     max-width: 80rem;
@@ -202,6 +229,77 @@
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+}
+
+.classificacao-content {
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.menu-ranking {
+    display: fixed;
+    background: var(--red-color);
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-ranking-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.ranking-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ranking-title h5 {
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.menu-ranking-content h5 {
+    display: block;
+}
+
+.menu-ranking-content ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-ranking-content ul li a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu-ranking-content ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.1rem;
+    background: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu-ranking-content ul li a:hover::after {
+    width: 50%;
+    left: 25%;
 }
 
 .grid-description {
