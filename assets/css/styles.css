@@ -196,11 +196,16 @@
 
 .foto-logos {
     width: 18rem;
+    transition: all 300ms ease-in-out;
+}
+
+.foto-logos:hover {
+    width: 18.5rem;
 }
 
 .grid-apoiadores {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--gap);
     font-size: 1.8rem;
 }
@@ -212,7 +217,7 @@
 
 .grid-adulto {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--gap);
     font-size: 1.8rem;
 }
@@ -221,7 +226,7 @@
     font-size: rem;
 }
 
-.sobre-content, .apoiadores-content{
+.sobre-content {
     max-width: 80rem;
     display: flex;
     flex-direction: column;
@@ -229,6 +234,24 @@
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+}
+
+.apoiadores-content {
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: nowrap;*/
+    justify-content: center;
+    text-align: center;
+    min-height: 10vh;
+}
+
+.apoiadores-content h3{
+    font-size: 1.5rem;
+}
+
+.apoiadores-content h2{
+    font-size: 3rem;
 }
 
 .classificacao-content {
@@ -460,15 +483,15 @@
 }
 
 .borda-redonda {
-    width: 17.5rem;
-    border-radius: 40%;
+    width: 15rem;
+    border-radius: 30%;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     margin-bottom: 1.5rem;
 }
 
 .borda-redonda:hover {
-    width: 18rem;
+    width: 16rem;
 }
 
 .cadastro3x3-content legend{
@@ -498,7 +521,28 @@
     margin-top: 2rem;
 }
 
+
 @media (max-width: 1000px) {
+
+    .foto-logos{
+        width: 13rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    .foto-logos:hover{
+        width: 14rem;
+    }
+
+    .grid-adulto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+    font-size: 1rem;
+    }
+
+    .title-h2 h2 {
+        font-size: 3rem;
+    }
 
     .cadastro3x3-content h2 {
         font-size: 2.1rem;
@@ -576,10 +620,28 @@
 }
 
 /*IPHONE XR*/
-@media (max-width: 414px) {
+@media (max-width: 500px) {
 
-    .sobre-content h2 {
-        font-size: 3rem;
+    .grid-adulto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+    font-size: 1rem;
+    }
+
+    .foto-logos {
+        display: block;
+        width: 15rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    .foto-logos:hover {
+        display: block;
+        width: 16rem;
+    }
+
+    .title-h2 h2 {
+        font-size: 2rem;
     }
 
     .title-main-apoiadores{
@@ -595,5 +657,24 @@
 @media (max-width: 376px) {
     .cadastro3x3-content h2 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .title-h2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid-adulto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intro-text-content h2 {
+        font-size: 2rem;
+    }
+
+    .intro-text-content p {
+        font-size: 1rem;
     }
 }
