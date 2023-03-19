@@ -557,7 +557,7 @@
 
 .grid-escola{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: var(--gap);
     font-size: 1rem;
     }
@@ -570,7 +570,7 @@
     }
 
     .foto-logos:hover{
-        width: 14rem;
+        width: 13.5rem;
     }
 
     .grid-adulto {
@@ -693,13 +693,13 @@
     
     .foto-logos {
         display: block;
-        width: 15rem;
+        width: 13rem;
         transition: all 300ms ease-in-out;
     }
 
     .foto-logos:hover {
         display: block;
-        width: 16rem;
+        width: 13.5rem;
     }
 
     .title-h2 h2 {
