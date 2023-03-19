@@ -521,6 +521,46 @@
     margin-top: 2rem;
 }
 
+.menu-5x5-equipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem 0;
+}
+
+.menu-5x5-equipes h2 {
+    font-size: 3.2rem;
+}
+
+.botoes button {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.botoes button:hover {
+    color: var(--red-color);
+}
+
+
+.div-escolas {
+    display: none;
+}
+
+.grid-escola{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--gap);
+    font-size: 1rem;
+    }
 
 @media (max-width: 1000px) {
 
@@ -538,6 +578,13 @@
     grid-template-columns: repeat(4, 1fr);
     gap: var(--gap);
     font-size: 1rem;
+    }
+
+    .grid-escola{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+        font-size: 1rem;
     }
 
     .title-h2 h2 {
@@ -622,13 +669,28 @@
 /*IPHONE XR*/
 @media (max-width: 500px) {
 
+    .menu-5x5-equipes h2 {
+        font-size: 2rem;
+    }
+
+    .botoes button{
+        font-size: 1.2rem;
+    }
+
     .grid-adulto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--gap);
     font-size: 1rem;
     }
-
+    
+    .grid-escola{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap);
+        font-size: 1rem;
+    }
+    
     .foto-logos {
         display: block;
         width: 15rem;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/var.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="//widget.nbn23.com/widget-react.js.gz" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -34,6 +35,9 @@
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#equipes">Equipes</a>
                     </li>
                     <li>
                         <a rel="nofollow" target="_blank" href="https://www.instagram.com/ligaphilipeiajp">
@@ -63,45 +67,83 @@
     </section>
 
     <section id="equipes" class="white-bg">
-        <div class="main-content equipes-adulto-content title-h2">
-            <h2 class="title-main">Equipes Confirmadas</h2>
-            <div class="grid-adulto">
-                <article>
-                    <img class="foto-logos" src="./assets/img/teams-logo-adulto/ARCANJOS.png" alt="">
-                </article>
-                <article>
-                    <img class="foto-logos" src="./assets/img/teams-logo-adulto/AVAB.png" alt="">
-                </article>
-                <article>
-                    <img class="foto-logos" src="./assets/img/teams-logo-adulto/BASQUETE-PARAÍBA.png" alt="">
-                </article>
-                <article>
-                    <img class="foto-logos" src="./assets/img/teams-logo-adulto/BPM.png" alt="" srcset="">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/DYNAMITE.png" alt="" class="foto-logos">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/GEISEL-KINGS.png" alt="" class="foto-logos">
-                </article>
-                <article>
-                    <img class="foto-logos" src="./assets/img/teams-logo-adulto/MANAÍRA-SHARKS.png" alt="" srcset="">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/UNINASSAU-A.png" alt="" class="foto-logos">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/UNINASSAU-B.png" alt="" class="foto-logos">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/AEROMASTER.png" alt="" class="foto-logos">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/ANSEF-LOGO.png" alt="" class="foto-logos">
-                </article>
-                <article>
-                    <img src="./assets/img/teams-logo-adulto/CANGACEIROS-LOGO.png" alt="" class="foto-logos">
-                </article>
+
+        <div class="main-content equipes-adulto-content">
+            <nav class="menu-5x5-equipes">
+                <h2>Equipes Confirmadas</h2>
+                <div class="botoes">
+                    <button id="button-adulto" class="button-adulto" type="button" onclick="exibirAdulto()">Adulto</button>
+                    <button id="button-escolar" type="button" onclick="exibirEscolas()">Escolares</button>
+                </div>
+            </nav>
+
+            <div id="div-adulto" class="div-adulto">
+                <div class="grid-adulto">
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-adulto/ARCANJOS.png" alt="">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-adulto/AVAB.png" alt="">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-adulto/BASQUETE-PARAÍBA.png" alt="">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-adulto/BPM.png" alt="" srcset="">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/DYNAMITE.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/GEISEL-KINGS.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-adulto/MANAÍRA-SHARKS.png" alt="" srcset="">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/UNINASSAU-A.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/UNINASSAU-B.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/AEROMASTER.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/ANSEF-LOGO.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-adulto/CANGACEIROS-LOGO.png" alt="" class="foto-logos">
+                    </article>
+                </div>
+            </div>
+            <!-- ESCOLAR ESCONDIDA POR ENQUANTO -->
+
+            <div id="div-escolas" class="div-escolas">
+                <div class="grid-escola">
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-escola/az-logo-psd.png" alt="">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-escola/logo-evolucao.png" alt="">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-escola/logo-poligono-psd.png" alt="">
+                    </article>
+                    <article>
+                        <img class="foto-logos" src="./assets/img/teams-logo-escola/lourdinas-logo-psd.jpg" alt="">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-escola/marista-logo.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-escola/Logo_Campeões_do_Amanhã_Color1.png" alt="" class="foto-logos">
+                    </article>
+                    <article>
+                        <img src="./assets/img/teams-logo-escola/Motiva-logo_5-4.png" alt="" class="foto-logos">
+                    </article>
+                </div>
+
             </div>
         </div>
     </section>
