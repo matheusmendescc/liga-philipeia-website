@@ -705,6 +705,22 @@
 
 /*IPHONE XR*/
 @media (max-width: 500px) {
+    .categorias-content h2 {
+        font-size: 3rem;
+    }
+
+    .intro-text-content h2 {
+        line-height: 1;
+        font-size: 1rem;
+    }
+
+    .intro-text-content h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text-content p {
+        font-size: 1rem;
+    }
 
     .menu-5x5-equipes h2 {
         font-size: 2rem;
@@ -758,6 +774,7 @@
 
 /*IPHONE SE*/
 @media (max-width: 376px) {
+
     .cadastro3x3-content h2 {
         font-size: 1.5rem;
     }
