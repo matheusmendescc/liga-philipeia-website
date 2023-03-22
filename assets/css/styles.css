@@ -129,8 +129,14 @@
 }
 
 .intro-text-content h2 {
-    margin-bottom: 2rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
     line-height: 1;
+}
+
+.intro-text-content h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
 }
 
 .intro-img img {
@@ -560,7 +566,30 @@
     grid-template-columns: repeat(7, 1fr);
     gap: var(--gap);
     font-size: 1rem;
-    }
+}
+
+.subtitle-ranking {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.partidas-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partidas-content table tr td{
+    padding: 0 3em;
+}
+
+.position {
+    font-style:italic;
+}
+
+.position h6{
+    font-size: 2rem;
+}
 
 @media (max-width: 1000px) {
 
