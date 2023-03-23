@@ -705,6 +705,18 @@
 
 /*IPHONE XR*/
 @media (max-width: 500px) {
+    .equipes-content p {
+        font-size: 1.5rem;
+    }
+
+    .equipes-content h2 {
+        font-size: 3rem;
+    }
+
+    .sobre-content h2{
+        font-size: 3rem;
+    }
+
     .categorias-content h2 {
         font-size: 3rem;
     }
@@ -748,6 +760,18 @@
         display: block;
         width: 7rem;
         transition: all 300ms ease-in-out;
+    }
+
+    .grid-equipe h3 {
+        font-size: 1.8rem;
+    }
+
+    .grid-equipe p {
+        font-size: 1.2rem;
+    }
+
+    .foto-equipe {
+        width: 13.5rem;
     }
 
     .foto-logos:hover {
