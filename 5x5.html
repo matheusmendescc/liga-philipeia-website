@@ -163,27 +163,47 @@
             <div class="ranking-title">
                 <h5>Classificação</h5>
             </div>
-<!--
+
             <div class="menu-ranking-content">
                 <nav>
                     <ul>
-                        <li><a href="#ranking">Partidas</a></li>
-                        <li><a href="#ranking">Classificação</a></li>
-                        <li><a href="#ranking">Estatísticas</a></li>
-                        <li><a href="#ranking">Notícias</a></li>
+                        <li>
+                            <button id="button-partidas" type="button" onclick="exibirPartidas()">
+                                <a id="botao-partidas" href="#ranking">Partidas</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="button-classificacao" type="button" onclick="exibirClassificacao()">
+                                <a id="botao-classificacao" href="#ranking">Classificação</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="button-news" type="button" onclick="exibirNews()">
+                                <a id="botao-news" href="#ranking">Notícias</a>
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </div>
--->
-
         </div>
 
         <div class="main-content sobre-content">
-            <div class="div-partidas">
+            <div id="div-partidas">
+                <div class="partidas-content">
+                    <iframe class="table-ranking" src="https://copafacil-web.web.app/-nndilfmyqwgxrgvdfa9/embedded/embedded/match" ></iframe>
+                </div>
+            </div>
+            <div id="div-classificacao">
                 <div class="partidas-content">
                     <iframe class="table-ranking" src="https://copafacil-web.web.app/-nndilfmyqwgxrgvdfa9/embedded/embedded/classification"></iframe>
                 </div>
             </div>
+            <div id="div-news">
+                <div class="partidas-content">
+                    <iframe class="table-ranking" src="https://copafacil-web.web.app/-nndilfmyqwgxrgvdfa9/embedded/embedded/midias"></iframe>
+                </div>
+            </div>
+        </div>
     </section>
     
     <footer id="footer" class="footer white-bg">
