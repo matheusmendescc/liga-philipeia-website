@@ -746,7 +746,7 @@
 
     .intro-img {
         max-width: 100%;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 
     .hide-h2 {
@@ -879,6 +879,10 @@
         font-size: 1.6rem;
     }
 
+    .cadastro3x3-content h3 {
+        font-size: 2.9rem;
+    }
+
     .ranking-title h5 {
         font-size: 3rem;
     }
@@ -886,9 +890,28 @@
 
 /*IPHONE SE*/
 @media (max-width: 376px) {
+    .intro-text-content .show-h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text-content .show-h1{
+        font-size: 3rem;
+    }
+
+    .intro-content .intro-img, .intro-content .intro-text-content{
+        margin-top: 0%;
+    }
 
     .cadastro3x3-content h2 {
         font-size: 1.5rem;
+    }
+
+    .grid-apoiadores img {
+        width: 6rem;
+    }
+
+    .grid-apoiadores h3 {
+        font-size: 0.8rem;
     }
 }
 
