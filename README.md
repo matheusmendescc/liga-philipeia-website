@@ -23,7 +23,7 @@
 
 <h2>Instalação e Uso</h2>
 
-<p>Não é necessário instalar ou executar nada localmente para utilizar o site. Basta acessá-lo pelo seu navegador web favorito através do seguinte endereço: <a href="https://ligaphilipeiajp.netlify.app/">https://ligaphilipeiajp.netlify.app/</a>.</p>
+<p>Não é necessário instalar ou executar nada localmente para utilizar o site. Basta acessá-lo pelo seu navegador web favorito através do seguinte endereço: <a href="http://ligaphilipeia.com">https://ligaphilipeia.com</a>.</p>
 
 <h2>Desenvolvimento</h2>
 
