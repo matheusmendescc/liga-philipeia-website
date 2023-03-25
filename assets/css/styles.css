@@ -79,6 +79,10 @@
     display: flex;
 }
 
+.hide-h2 {
+    display: none;
+}
+
 .menu ul li a {
     display: block;
     padding: 2rem;
@@ -636,7 +640,7 @@
         font-size: 1.8rem;
     }
 
-    .grid-equipe, .grid-categorias, .grid-apoiadores {
+    .grid-equipe, .grid-categorias {
         grid-template-columns: 2fr;
     }
 
@@ -701,20 +705,79 @@
     .menu-space {
         display: none;
     }
+
+    .grid-equipe{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*IPHONE XR*/
 @media (max-width: 500px) {
+
+    .intro-content {
+        display: block;
+        text-align: center;
+    }
+
+    .intro-text-content .show-h2 {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .intro-text-content .show-h1 {
+        display: block;
+        font-size: 5rem;
+    }
+
+    .intro-content .intro-img, .intro-content .intro-text-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .intro-content h2 {
+        display: none;
+    }
+
+    .show-p {
+        display: none;
+    }
+
+    .intro-img {
+        max-width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .hide-h2 {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .hide-h2 h4 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .hide-h2 p {
+        font-size: 1.5rem;
+    }
+
     .equipes-content p {
         font-size: 1.5rem;
     }
 
     .equipes-content h2 {
-        font-size: 3rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
     }
 
     .sobre-content h2{
         font-size: 3rem;
+    }
+
+    .sobre-content p {
+        font-size: 1.5rem;
     }
 
     .categorias-content h2 {
@@ -722,7 +785,6 @@
     }
 
     .intro-text-content h2 {
-        line-height: 1;
         font-size: 1rem;
     }
 
@@ -740,6 +802,27 @@
 
     .botoes button{
         font-size: 1.2rem;
+    }
+
+    .grid-apoiadores {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-apoiadores img {
+        width: 7rem;
+    }
+
+    .grid-apoiadores img:hover {
+        width: 7.1rem;
+    }
+
+    .grid-apoiadores h3 {
+        font-size: 0.8rem;
+    }
+
+    .apoiadores-content h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     .grid-adulto {
@@ -762,16 +845,26 @@
         transition: all 300ms ease-in-out;
     }
 
+    .equipes-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-equipe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .grid-equipe h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .grid-equipe p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .foto-equipe {
-        width: 13.5rem;
+        width: 13rem;
     }
 
     .foto-logos:hover {
@@ -782,11 +875,6 @@
     .title-h2 h2 {
         font-size: 2rem;
     }
-
-    .title-main-apoiadores{
-        font-size: 3rem;
-    }
-    
     .cadastro3x3-content h2 {
         font-size: 1.6rem;
     }
