@@ -290,6 +290,11 @@
     padding-bottom: 0;
 }
 
+.menu-ranking-content button{
+    background: none;
+    border: none;
+}
+
 .ranking-title {
     display: flex;
     justify-content: center;
@@ -602,6 +607,10 @@
     border: none;
 }
 
+#div-classificacao, #div-news {
+    display: none;
+}
+
 @media (max-width: 1000px) {
 
     .foto-logos{
@@ -912,6 +921,14 @@
 
     .grid-apoiadores h3 {
         font-size: 0.8rem;
+    }
+
+    .ranking-title h5{
+        font-size: 2rem;
+    }
+
+    .menu-ranking-content ul li a{
+        font-size: 1rem;
     }
 }
 
