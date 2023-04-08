@@ -1,4 +1,3 @@
-
 .main-bg {
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231c0000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23370000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23530000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%236e0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%238A0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -173,7 +172,8 @@
     justify-content: center;
     align-items: center;
 }
-.title-h2 h2{
+
+.title-h2 h2 {
     font-size: 4rem;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -257,11 +257,11 @@
     min-height: 10vh;
 }
 
-.apoiadores-content h3{
+.apoiadores-content h3 {
     font-size: 1.5rem;
 }
 
-.apoiadores-content h2{
+.apoiadores-content h2 {
     font-size: 3rem;
 }
 
@@ -290,7 +290,7 @@
     padding-bottom: 0;
 }
 
-.menu-ranking-content button{
+.menu-ranking-content button {
     background: none;
     border: none;
 }
@@ -428,7 +428,7 @@
     opacity: 25%;
 }
 
-.form-grid legend{
+.form-grid legend {
     font-style: italic;
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
@@ -468,7 +468,7 @@
     padding-bottom: 1.5rem;
 }
 
-.developer a{
+.developer a {
     transition: all 300ms ease-in-out;
     color: var(--red-color);
     text-decoration: none;
@@ -510,7 +510,19 @@
     width: 16rem;
 }
 
-.cadastro3x3-content legend{
+.borda-redonda-news {
+    width: 10rem;
+    border-radius: 30%;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    margin-bottom: 1.5rem;
+}
+
+.grid-apoiadores .font-news {
+    font-size: 1rem;
+}
+
+.cadastro3x3-content legend {
     font-style: italic;
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
@@ -571,7 +583,7 @@
     display: none;
 }
 
-.grid-escola{
+.grid-escola {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: var(--gap);
@@ -589,21 +601,21 @@
     align-items: center;
 }
 
-.partidas-content table tr td{
+.partidas-content table tr td {
     padding: 0 3em;
 }
 
 .position {
-    font-style:italic;
+    font-style: italic;
 }
 
-.position h6{
+.position h6 {
     font-size: 2rem;
 }
 
 .table-ranking {
-    width:100%; 
-    height:70rem;
+    width: 100%;
+    height: 70rem;
     border: none;
 }
 
@@ -611,26 +623,189 @@
     display: none;
 }
 
-@media (max-width: 1000px) {
+.news-menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    color: white;
+    background: grey;
+    padding: 0.5rem 3rem;
+}
 
-    .foto-logos{
+.news-menu-title h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0rem 2rem;
+}
+
+.news-space {
+    margin-top: 5.5rem;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider ul {
+    list-style: none;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-news {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-news p {
+    text-align: center;
+    width: 75rem;
+}
+
+/*------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.first {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autor p {
+    color: #717171;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+@media (max-width: 1000px) {
+    .news-space {
+        margin-top: 0rem;
+    }
+
+    .news-menu-title {
+        padding: 2rem 3rem;
+    }
+
+    .foto-logos {
         margin: 0;
         width: 8rem;
         transition: all 300ms ease-in-out;
     }
 
-    .foto-logos:hover{
+    .foto-logos:hover {
         width: 8.1rem;
     }
 
     .grid-adulto {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: var(--gap);
-    font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: var(--gap);
+        font-size: 1rem;
     }
 
-    .grid-escola{
+    .grid-escola {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: var(--gap);
@@ -715,7 +890,7 @@
         display: none;
     }
 
-    .grid-equipe{
+    .grid-equipe {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -738,7 +913,7 @@
         font-size: 5rem;
     }
 
-    .intro-content .intro-img, .intro-content .intro-text-content{
+    .intro-content .intro-img, .intro-content .intro-text-content {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -781,7 +956,7 @@
         margin-bottom: 2rem;
     }
 
-    .sobre-content h2{
+    .sobre-content h2 {
         font-size: 3rem;
     }
 
@@ -809,7 +984,7 @@
         font-size: 2rem;
     }
 
-    .botoes button{
+    .botoes button {
         font-size: 1.2rem;
     }
 
@@ -835,19 +1010,19 @@
     }
 
     .grid-adulto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--gap);
-    font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--gap);
+        font-size: 1rem;
     }
-    
-    .grid-escola{
+
+    .grid-escola {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gap);
         font-size: 1rem;
     }
-    
+
     .foto-logos {
         display: block;
         width: 7rem;
@@ -884,6 +1059,7 @@
     .title-h2 h2 {
         font-size: 2rem;
     }
+
     .cadastro3x3-content h2 {
         font-size: 1.6rem;
     }
@@ -903,11 +1079,11 @@
         font-size: 1.5rem;
     }
 
-    .intro-text-content .show-h1{
+    .intro-text-content .show-h1 {
         font-size: 3rem;
     }
 
-    .intro-content .intro-img, .intro-content .intro-text-content{
+    .intro-content .intro-img, .intro-content .intro-text-content {
         margin-top: 0%;
     }
 
@@ -923,11 +1099,11 @@
         font-size: 0.8rem;
     }
 
-    .ranking-title h5{
+    .ranking-title h5 {
         font-size: 2rem;
     }
 
-    .menu-ranking-content ul li a{
+    .menu-ranking-content ul li a {
         font-size: 1rem;
     }
 }
