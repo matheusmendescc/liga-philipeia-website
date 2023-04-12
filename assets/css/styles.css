@@ -780,6 +780,7 @@
 }
 
 @media (max-width: 1000px) {
+
     .news-space {
         margin-top: 0rem;
     }
@@ -897,6 +898,14 @@
 
 /*IPHONE XR*/
 @media (max-width: 500px) {
+    .news h4 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container-news p {
+        font-size: 1.6rem;
+    }
 
     .intro-content {
         display: block;
@@ -1075,6 +1084,7 @@
 
 /*IPHONE SE*/
 @media (max-width: 376px) {
+
     .intro-text-content .show-h2 {
         font-size: 1.5rem;
     }
